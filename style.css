@@ -1,0 +1,44 @@
+html,body{
+    height:100%;
+}
+:root{
+    --house-roof:brown;
+    --house-window:green;
+}
+body{
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    --house-wall:yellow;
+}
+.roof{
+    border-left:100px solid transparent;
+    border-right:100px solid transparent;
+    border-bottom:100px solid var(--house-roof,darkblue);
+    width:180px;
+    height:10px;
+}
+.wall{
+    width:380px;
+    height:200px;
+    background:var(--house-wall,gray);
+    position: relative;
+}
+.door{
+    width:60px;
+    height:90px;
+    background-color:burlywood;
+    position:absolute;
+    bottom:0;
+    left:155px;
+    border:5px solid black;
+}
+.window{
+    width:45px;
+    height:45px;
+    --house-window:white;
+    background-color: var(--house-window);
+    position:absolute;
+    top:22px;
+    right:22px;
+}
